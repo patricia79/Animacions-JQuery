@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>click demo jquery</title>
+  <style>
+  
+  </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+</head>
+<body>
+ 
+Mi nombre: <input id="i_nombre" type="input"></input><br>
+Mi animal: <input id="i_animal" type="input"></input><br>
+<button id="btn_action" type="button">ACCIÓN</button>
+
+<p id="p_result"> Hola, me llamo <span id="s_nombre">____</span> y tengo una moto.</p>
+Me gustan los <span id="s_animal">____</span> .</p>
+
+
+<script>
+
+
+$(function() {
+  	
+		$("#btn_action").click(function() {
+error = 0;
+
+var nombre = $
+            var nombre = $("#i_nombre").val();
+            $("#s_nombre").text(nombre);
+            var animal = $("#i_animal").val();
+            $("#s_animal").text(animal);
+
+            $("#p_result").show();
+		});
+
+	});
+
+
+</script>
+ 
+</body>
+</html>

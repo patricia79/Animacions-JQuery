@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Hola mundo</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="mi_texto"></div>
+<div id="mi_html"></div>
+<button id="myBtn">Mi botón</button>
+  <script>
+	$(function() {
+		// cuando en el boton detecta un click aparece un texto hello world
+		$("#myBtn").click(function() {
+			$("#mi_texto").append("Hello <b>World</b>");
+			$("#mi_texto").text("Hello <b>World</b>");
+			$("#myBtn").text("Hello <b>World</b>");// esto cambiaría el texto del boton
+			$("#mi_html").html("Hello <b>World</b>");
+		});
+
+	});
+  </script>
+	 
+</body>
+</html

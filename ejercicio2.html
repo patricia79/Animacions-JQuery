@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>click demo jquery</title>
+  <style>
+  p {
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+  }
+  p:hover {
+    background: yellow;
+  }
+  </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+</head>
+<body>
+ 
+<button type="button">Hello</button>
+<button type="button">Bye Bye</button>
+
+<p id="p_result"></p>
+ 
+<script>
+
+/*Visualiza en <p> el texto del botón pulsado: 
+  */
+$(function(){
+
+
+
+  $("button").click(function() {
+    var pollo = $(this).text();
+    $("#p_result").html( pollo );
+		});
+  });
+
+
+</script>
+ 
+</body>
+</html>
