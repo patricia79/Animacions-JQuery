@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mi_btnL").click(function () {
+          $("#caja_verde").animate({ left: "-=50px", opacity: "0.5" }, "slow");
+        });
+        $("#mi_btnR").click(function () {
+          $("#caja_verde").animate(
+            { left: "+=50px", opacity: "0.5" }, "fast");
+        });
+      
+      $("#mi_btnU").click(function () {
+        $("#caja_verde").animate(
+          { bottom: "+=50px", opacity: "0.5" }, "slow");
+     
+      $("#mi_btnD").click(function () {
+        $("#caja_verde").animate(
+          { top: "+=50px", opacity: "0.5" }, "slow");
+             });
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <button id="mi_btnL">Start left</button>
+    <button id="mi_btnR">Start right</button>
+    <button id="mi_btnU">Start up</button>
+    <button id="mi_btnD">Start down</button>
+    <div id="caja_verde"></div>
+    <style>
+      #caja_verde {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+      }
+    </style>
+  </body>
+</html>
+    
