@@ -34,11 +34,11 @@ $("#login-form").validate({
 
 	messages: {
 		"login-email": {
-			required: "Este campo es obligatorio.",
+			required: "CAMP OBLIGATORI.",
 			email: "Por favor, escribe una dirección de correo válida",
 		},
 		"login-password": {
-			required: "Este campo es obligatorio.",
+			required:  "CAMP OBLIGATORI.",
 			minlength: "Por favor, no escribas menos de {0} caracteres.",
 		},
 	}
